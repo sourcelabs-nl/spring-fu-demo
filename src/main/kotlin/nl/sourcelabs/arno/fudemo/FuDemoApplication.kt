@@ -69,7 +69,7 @@ class UserHandler(
         private val configuration: SampleProperties) {
 
     suspend fun listApi(request: CoServerRequest) = coHandler {
-        ok().contentType(MediaType.APPLICATION_JSON)
+        ok().contentType(MediaType.APPLICATION_JSON_UTF8)
                 .body(repository.findAll())
     }
 
