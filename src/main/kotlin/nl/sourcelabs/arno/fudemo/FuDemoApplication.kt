@@ -8,14 +8,18 @@ import org.springframework.fu.kofu.configuration
 import org.springframework.fu.kofu.r2dbc.r2dbcH2
 import org.springframework.fu.kofu.web.server
 import org.springframework.fu.kofu.webApplication
+import org.springframework.http.MediaType
+import org.springframework.web.function.server.CoServerRequest
+import org.springframework.web.function.server.body
+import org.springframework.web.function.server.coHandler
 
 val app = webApplication {
-    server()
     logging {
         level = LogLevel.DEBUG
     }
     configurationProperties<SampleProperties>(prefix = "sample")
     enable(dataConfig)
+    enable(webConfig)
 }
 
 class SampleProperties {
@@ -42,6 +46,39 @@ val dataConfig = configuration {
     }
 }
 
+val webConfig = configuration {
+    beans {
+        bean<UserHandler>()
+    }
+    server {
+        port = if (profiles.contains("test")) 8181 else 8080
+        coRouter {
+            val userHandler = ref<UserHandler>()
+            GET("/api/user", userHandler::listApi)
+            GET("/conf", userHandler::conf)
+        }
+        codecs {
+            string()
+            jackson()
+        }
+    }
+}
+
+class UserHandler(
+        private val repository: UserRepository,
+        private val configuration: SampleProperties) {
+
+    suspend fun listApi(request: CoServerRequest) = coHandler {
+        ok().contentType(MediaType.APPLICATION_JSON)
+                .body(repository.findAll())
+    }
+
+    suspend fun conf(request: CoServerRequest) = coHandler {
+        ok().syncBody(configuration.message)
+    }
+
+}
+
 class UserRepository(private val client: CoDatabaseClient) {
 
     suspend fun count() =
@@ -49,6 +86,9 @@ class UserRepository(private val client: CoDatabaseClient) {
 
     suspend fun findAll() =
             client.select().from("users").asType(User::class).fetch().all()
+
+    suspend fun findOne(id: String) =
+            client.execute().sql("SELECT * FROM users WHERE login = \$1").bind(1, id).asType(User::class).fetch().one()
 
     suspend fun deleteAll() {
         client.execute().sql("DELETE FROM users").fetch().one()
