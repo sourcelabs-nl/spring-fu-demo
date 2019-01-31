@@ -7,7 +7,7 @@ Choose new project from initializer and choose kotlin
 
 ## add dependencies
 
-start with modifying dependencies
+start with modifying dependencies 
 
         <dependency>
             <groupId>org.springframework.fu</groupId>
@@ -48,6 +48,14 @@ start with modifying dependencies
             </exclusions>
         </dependency>
 
+-- start with >>>        
+        
+springfudependency
+
+juni-jupiter
+
+springfudemorepo
+
 ## remove all the imports
 
 and start modifying the app to have
@@ -56,9 +64,73 @@ and start modifying the app to have
            server()
     }
     
+    fun main(args: Array<String>) {
+        app.run(args)
+    }
+    
 and the test to
 
     fun `Run the web application`() {
     
 with the jupiter style of testing
+
+    app.run()
+
+
+use: fufursttest
+
+## add logging debug config
+
+        logging {
+            level = LogLevel.DEBUG
+            
+        }
+
+## add ugly style sample properties
+
+use: fusampleproperties
+
+add: configurationProperties<SampleProperties>(prefix = "sample") to app
+
+## modify test to validate config
+
+    val context = app.run
+    assertEquals("hello", context.getBean<SampleProperties>())
+    
+## modify the app
+
+use: fuuserclass
+
+use: fuuserrepo
+
+change kotlin version 1.3.11
+
+use: fudataconfig
+
+enable(dataConfig)
+
+run test to check the app still works
+
+use: fuuserhandler
+
+use: fuwebconfig
+
+remove server from app
+
+enable(webConfig)
+
+change test to:
+
+use: futestexended
+use: futestperclassheader
+
+
+## cahnge config
+
+add indentOutput = true to jackson() --> jackson {}
+
+
+## This should be able to convert this to GraalVM native image
+
+But that is too bleeding edge for me ;)
 
