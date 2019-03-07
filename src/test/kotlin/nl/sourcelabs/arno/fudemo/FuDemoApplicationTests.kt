@@ -22,7 +22,7 @@ class FuDemoApplicationTests {
 
     @Test
     fun `Request HTTP api endpoint`() {
-        client.get().uri("/api/user").exchange()
+        client.get().uri("/api/books").exchange()
                 .expectStatus().is2xxSuccessful
                 .expectHeader().contentType(MediaType.APPLICATION_JSON_UTF8_VALUE)
     }
