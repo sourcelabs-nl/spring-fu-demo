@@ -28,6 +28,13 @@ class FuDemoApplicationTests {
     }
 
     @Test
+    fun `Request HTTP api endpoint for one book`() {
+        client.get().uri("/api/books/9780142410370").exchange()
+                .expectStatus().is2xxSuccessful
+                .expectHeader().contentType(MediaType.APPLICATION_JSON_UTF8_VALUE)
+    }
+
+    @Test
     fun `Request of endpoint`() {
         client.get().uri("/conf").exchange()
                 .expectStatus().is2xxSuccessful

@@ -12,8 +12,15 @@ Cache-Control: no-cache
 
 ###
 
-GET http://localhost:8080/api/books
+GET http://localhost:8080/api/books/
 Accept: application/json
+Content-Type: application/json;
+Cache-Control: no-cache
+
+###
+
+GET http://localhost:8080/api/books
+Acce pt: application/json
 Content-Type: application/json;
 Cache-Control: no-cache
 
