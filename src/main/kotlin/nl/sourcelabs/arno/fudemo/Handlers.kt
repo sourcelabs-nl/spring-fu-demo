@@ -21,7 +21,7 @@ class BooksHandler(
 
 
     suspend fun listView(request: ServerRequest) =
-            ok().renderAndAwait("users", mapOf("users" to repository.findAll()))
+            ok().renderAndAwait("books", mapOf("books" to repository.findAll()))
 
 
     suspend fun conf(request: ServerRequest) =

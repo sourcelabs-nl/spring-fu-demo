@@ -4,19 +4,11 @@ import org.springframework.data.r2dbc.function.CoDatabaseClient
 
 class BookRepository(private val client: CoDatabaseClient) {
 
-    suspend fun count() =
-            client.execute().sql("Select COUNT(*) FROM books").asType(Int::class).fetch().one()!!
-
     suspend fun findAll() =
             client.select().from("books").asType(Book::class).fetch().all()
 
-    suspend fun findOne(isbn: String): Book {
-
-        val book = client.execute().sql("SELECT * FROM books WHERE isbn = \$1").bind(1, isbn).asType(Book::class).fetch().one()!!
-
-        return book
-    }
-
+    suspend fun findOne(isbn: String) =
+            client.execute().sql("SELECT * FROM books WHERE isbn = \$1").bind(0, isbn).asType(Book::class).fetch().one()!!
 
     suspend fun deleteAll() {
         client.execute().sql("DELETE FROM books").execute()
