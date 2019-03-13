@@ -1,0 +1,342 @@
+GET http://localhost:8080/hello
+Acce pt: application/json
+Content-Type: application/json;
+Cache-Control: no-cache
+
+<> 2019-03-13T093355.200.txt
+
+###
+
+GET http://localhost:8080/hello
+Acce pt: application/json
+Content-Type: application/json;
+Cache-Control: no-cache
+
+<> 2019-03-13T092034.200.txt
+
+###
+
+GET http://localhost:8080/api/books/banaan
+Accept: application/json
+Content-Type: application/json;
+Cache-Control: no-cache
+
+<> 2019-03-09T044701.500.json
+
+###
+
+GET http://localhost:8080/api/books
+Acce pt: application/json
+Content-Type: application/json;
+Cache-Control: no-cache
+
+<> 2019-03-08T045853.200.json
+
+###
+
+GET http://localhost:8080/api/books/
+Accept: application/json
+Content-Type: application/json;
+Cache-Control: no-cache
+
+<> 2019-03-08T045851.200.json
+
+###
+
+GET http://localhost:8080/api/books/9780142410370
+Accept: application/json
+Content-Type: application/json;
+Cache-Control: no-cache
+
+<> 2019-03-08T045848.200.json
+
+###
+
+GET http://localhost:8080/stock/
+Acce pt: application/json
+Content-Type: application/json;
+Cache-Control: no-cache
+
+<> 2019-03-08T044244.500.json
+
+###
+
+GET http://localhost:8080/stock/
+Acce pt: application/json
+Content-Type: application/json;
+Cache-Control: no-cache
+
+<> 2019-03-08T044217.500.json
+
+###
+
+GET http://localhost:8080/stock
+Acce pt: application/json
+Content-Type: application/json;
+Cache-Control: no-cache
+
+<> 2019-03-08T044207.404.json
+
+###
+
+GET http://localhost:8080/api/books/9780142410370
+Accept: application/json
+Content-Type: application/json;
+Cache-Control: no-cache
+
+<> 2019-03-08T044005.200.json
+
+###
+
+GET http://localhost:8080/api/books/9780142410370
+Accept: application/json
+Content-Type: application/json;
+Cache-Control: no-cache
+
+<> 2019-03-08T044001.500.json
+
+###
+
+GET http://localhost:8080/api/books/9780142410370
+Accept: application/json
+Content-Type: application/json;
+Cache-Control: no-cache
+
+<> 2019-03-08T043947.500.json
+
+###
+
+GET http://localhost:8080/api/books/9780142410370
+Accept: application/json
+Content-Type: application/json;
+Cache-Control: no-cache
+
+<> 2019-03-08T043332.500.json
+
+###
+
+GET http://localhost:8080/api/books/9780142410370
+Accept: application/json
+Content-Type: application/json;
+Cache-Control: no-cache
+
+<> 2019-03-08T043306.500.json
+
+###
+
+GET http://localhost:8080/api/books/9780142410370
+Accept: application/json
+Content-Type: application/json;
+Cache-Control: no-cache
+
+<> 2019-03-08T043227.500.json
+
+###
+
+GET http://localhost:8080/api/books/9780142410370
+Accept: application/json
+Content-Type: application/json;
+Cache-Control: no-cache
+
+<> 2019-03-08T043111.200.json
+
+###
+
+GET http://localhost:8080/api/books/9780142410370
+Accept: application/json
+Content-Type: application/json;
+Cache-Control: no-cache
+
+<> 2019-03-08T043029.500.json
+
+###
+
+GET http://localhost:8080/api/books/9780142410370
+Accept: application/json
+Content-Type: application/json;
+Cache-Control: no-cache
+
+<> 2019-03-08T043000.500.json
+
+###
+
+GET http://localhost:8080/api/books/9780142410370
+Accept: application/json
+Content-Type: application/json;
+Cache-Control: no-cache
+
+<> 2019-03-08T042818.200.json
+
+###
+
+GET http://localhost:8080/api/books/
+Accept: application/json
+Content-Type: application/json;
+Cache-Control: no-cache
+
+<> 2019-03-08T042433.200.json
+
+###
+
+GET http://localhost:8080/api/books/9780142410370
+Accept: application/json
+Content-Type: application/json;
+Cache-Control: no-cache
+
+<> 2019-03-08T042405.500.json
+
+###
+
+GET http://localhost:8080/api/books/9780142410370
+Accept: application/json
+Content-Type: application/json;
+Cache-Control: no-cache
+
+<> 2019-03-08T041425.500.json
+
+###
+
+GET http://localhost:8080/api/books/9780142410370
+Accept: application/json
+Content-Type: application/json;
+Cache-Control: no-cache
+
+<> 2019-03-08T041413.500.json
+
+###
+
+GET http://localhost:8080/api/books/9780142410370
+Accept: application/json
+Content-Type: application/json;
+Cache-Control: no-cache
+
+<> 2019-03-08T041223.500.json
+
+###
+
+GET http://localhost:8080/api/books/9780142410370
+Accept: application/json
+Content-Type: application/json;
+Cache-Control: no-cache
+
+<> 2019-03-08T040900.500.json
+
+###
+
+GET http://localhost:8080/api/books
+Accept: application/json
+Content-Type: application/json;
+Cache-Control: no-cache
+
+<> 2019-03-08T040849.200.json
+
+###
+
+GET http://localhost:8080/api/books/
+Accept: application/json
+Content-Type: application/json;
+Cache-Control: no-cache
+
+<> 2019-03-08T040836.200.json
+
+###
+
+GET http://localhost:8080/api/books/9780142410370
+Accept: application/json
+Content-Type: application/json;
+Cache-Control: no-cache
+
+<> 2019-03-08T040809.500.json
+
+###
+
+GET http://localhost:8080/api/books/9780142410370
+Accept: application/json
+Content-Type: application/json;
+Cache-Control: no-cache
+
+<> 2019-03-08T040726.500.json
+
+###
+
+GET http://localhost:8080/api/books/9780142410370
+Accept: application/json
+Content-Type: application/json;
+Cache-Control: no-cache
+
+<> 2019-03-08T040422.500.json
+
+###
+
+GET http://localhost:8080/api/books/
+Accept: application/json
+Content-Type: application/json;
+Cache-Control: no-cache
+
+<> 2019-03-08T033717.200.json
+
+###
+
+GET http://localhost:8080/api/books
+Accept: application/json
+Content-Type: application/json;
+Cache-Control: no-cache
+
+<> 2019-03-08T033706.200.json
+
+###
+
+GET http://localhost:8080/api/books/9780142410370
+Accept: application/json
+Content-Type: application/json;
+Cache-Control: no-cache
+
+<> 2019-03-08T033654.500.json
+
+###
+
+GET http://localhost:8080/api/books/9780142410370
+Accept: application/json
+Content-Type: application/json;
+Cache-Control: no-cache
+
+<> 2019-03-07T044808.500.json
+
+###
+
+GET http://localhost:8080/api/books
+Accept: application/json
+Content-Type: application/json;
+Cache-Control: no-cache
+
+<> 2019-03-07T044742.200.json
+
+###
+
+GET http://localhost:8080/api/books/9780142410370
+Accept: application/json
+Content-Type: application/json;
+Cache-Control: no-cache
+
+<> 2019-03-07T044227.500.json
+
+###
+
+GET http://localhost:8080/api/books/9780142410370
+Accept: application/json
+Content-Type: application/json;
+Cache-Control: no-cache
+
+<> 2019-03-07T043942.500.json
+
+###
+
+GET http://localhost:8080/api/books/9780142410370
+Accept: application/json
+Content-Type: application/json;
+Cache-Control: no-cache
+
+<> 2019-03-07T043750.500.json
+
+###
+

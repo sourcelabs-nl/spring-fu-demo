@@ -17,9 +17,7 @@
     <properties>
         <java.version>1.8</java.version>
         <kotlin.version>1.3.20</kotlin.version>
-        <!-- 1.3.20 with fu 5-->
         <spring-fu.version>0.0.5</spring-fu.version>
-        <r2dbc-h2.version>1.0.0.M6</r2dbc-h2.version>
     </properties>
 
     <dependencies>
@@ -34,28 +32,10 @@
             <artifactId>spring-fu-webflux-coroutines</artifactId>
             <version>${spring-fu.version}</version>
         </dependency>
-        <dependency>
-            <groupId>org.springframework.fu</groupId>
-            <artifactId>spring-fu-data-r2dbc-coroutines</artifactId>
-            <version>${spring-fu.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>io.r2dbc</groupId>
-            <artifactId>r2dbc-h2</artifactId>
-            <version>${r2dbc-h2.version}</version>
-        </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-webflux</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-mustache</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.fasterxml.jackson.module</groupId>
-            <artifactId>jackson-module-kotlin</artifactId>
         </dependency>
         <dependency>
             <groupId>org.jetbrains.kotlin</groupId>
@@ -66,28 +46,6 @@
             <artifactId>kotlin-stdlib-jdk8</artifactId>
         </dependency>
 
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-api</artifactId>
-            <version>5.3.2</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-            <exclusions>
-                <exclusion>
-                    <artifactId>junit</artifactId>
-                    <groupId>junit</groupId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-        <dependency>
-            <groupId>io.projectreactor</groupId>
-            <artifactId>reactor-test</artifactId>
-            <scope>test</scope>
-        </dependency>
     </dependencies>
 
     <build>

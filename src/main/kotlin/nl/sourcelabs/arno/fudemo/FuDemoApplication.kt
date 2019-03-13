@@ -1,17 +1,28 @@
 package nl.sourcelabs.arno.fudemo
 
-import org.springframework.boot.logging.LogLevel
+import org.springframework.fu.kofu.web.server
 import org.springframework.fu.kofu.webApplication
+import org.springframework.web.reactive.function.server.*
+import org.springframework.web.reactive.function.server.ServerResponse.ok
+import reactor.core.publisher.Mono
 
 val app = webApplication {
-    logging {
-        level = LogLevel.DEBUG
+    beans {
+        bean<SampleHandler>()
     }
-    configurationProperties<SampleProperties>("sample")
-    enable(dataConfig)
-    enable(webConfig)
+    server {
+        router {
+            val handler = ref<SampleHandler>()
+            GET("/hello", handler::hello)
+        }
+    }
 }
 
-fun main(args: Array<String>) {
-    app.run(args)
+class SampleHandler {
+    fun hello(request: ServerRequest): Mono<ServerResponse> = ok().syncBody("Hello world!")
 }
+
+fun main() {
+    app.run()
+}
+
