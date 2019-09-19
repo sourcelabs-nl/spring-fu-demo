@@ -1,0 +1,21 @@
+== Sox Compliency
+
+|===
+|  |status | datum
+
+| *Context*
+
+When you are Sox compliant this means that we need to monitor when software is going to production
+
+*Decision*
+
+We will leave the approval at afterwards
+
+*Consequences*
+
+You also need to monitor your live environment when going live.
+
+| Approved
+| 8 april 2019
+
+|===

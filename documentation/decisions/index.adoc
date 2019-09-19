@@ -1,0 +1,15 @@
+== Decisions Log
+
+include::api-versioning.adoc[]
+
+include::atomist.adoc[]
+
+include::curcui-breaking.adoc[]
+
+include::mca-one-user-only.adoc[]
+
+include::sox-compliency.adoc[]
+
+include::spring-feign.adoc[]
+
+include::zalando-rest-guide.adoc[]

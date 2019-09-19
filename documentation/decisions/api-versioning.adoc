@@ -1,0 +1,66 @@
+== Versioning
+
+=== deprecation headers
+
+=== Context
+
+Versioning at bol.com they use this style:
+
+=======
+
+Warning: 299 - "Deprecated API"
+
+https://stackoverflow.com/questions/13884141/convention-for-http-response-header-to-notify-clients-of-deprecated-api
+
+Daarna:
+
+410 GONE
+
+https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.11
+
+=======
+
+|===
+|  |status | datum
+
+| *Context*
+
+Rest design
+
+*Decision*
+
+We follow the Zalando guidelines the best we can: 299 is not supported and 410 introduces dead code or an extra framework.
+So we will not use this style.
+
+*Consequences*
+
+
+
+| Approved
+| 20 may 2019
+
+|===
+
+|===
+|  |status | datum
+
+| *Context*
+
+custom headers for deprecated fields
+Another style is not to version but to use: field deprecation with headers.
+
+*Decision*
+
+This is a style that can be used; but it's not the standard.
+The style is called evolationair api versioning and it's mentioned in the guide.
+
+*Consequences*
+
+
+
+| Approved
+| 20 may 2019
+
+|===
+
+

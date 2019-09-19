@@ -1,0 +1,14 @@
+== feign
+
+Fiegn can be used, but only if a use case (benefit) can be made for it.
+
+=======
+
+https://spring.io/blog/2019/01/23/spring-cloud-greenwich-release-is-now-available#disqus_thread
+
+zonder service discovery want dit is per cloud en bij ons is de meeste communicatie over clouds heen.
+
+daarbij zijn er ook docker containers die geen spring boot zijn (pega / robotics / etc)
+
+
+=======

@@ -1,0 +1,21 @@
+== Prepare for 2 users per dossier
+
+===  Context
+
+When we build software we now build software for 1 user, the other user can not edit the details in the dossier.
+
+===  Decision
+
+We will wait for impact based on the requirements
+
+===  Consequences
+
+For now we will continue as is and we might have rework later on.
+
+===  Status
+ 
+Approved
+
+===  Date
+
+8 april 2019

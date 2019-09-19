@@ -1,0 +1,24 @@
+== Circuit breaking
+
+|===
+|  |status | datum
+
+| *Context*
+
+We need to configure circuit breaker in a way that we can reach our SLA's
+
+*Decision*
+
+We need to base us on the SLA not on the loadtest
+
+*Consequences*
+
+None for now.
+
+To create: _circuit breaking document_
+to see how we do resilience4J in the project
+
+| Proposed
+| 8 april 2019
+
+|===

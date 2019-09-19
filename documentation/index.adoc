@@ -1,0 +1,5 @@
+== Compiling Service
+
+include::context-and-scope.adoc[]
+
+include::decisions/index.adoc[]
