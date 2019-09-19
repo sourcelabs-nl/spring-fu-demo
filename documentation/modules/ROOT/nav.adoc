@@ -1,1 +1,2 @@
 * xref:index.adoc[Welcome]
+* xref:decisions/index.adoc[Decisions]
