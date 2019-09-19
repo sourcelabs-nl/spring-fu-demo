@@ -1,0 +1,6 @@
+name: spring-fu
+title: Spring FU
+version: dev
+nav:
+  - modules/ROOT/nav.adoc
+  - modules/module-one/nav.adoc
